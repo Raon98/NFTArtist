@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F2CB61"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_btn"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/top"
+        android:layout_alignParentTop="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#F2CB61"
+            android:gravity="center|center_horizontal"
+            android:text="회원가입"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top1"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <EditText
+            android:id="@+id/nicNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border"
+            android:hint="닉네임"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:maxLength="20"
+            android:singleLine ="true"
+            />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="비밀번호(6~10자리)"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:lines="11"
+            android:maxLines="1"
+            android:minLines="1"
+            android:maxLength="10"
+            android:singleLine ="true"
+            />
+
+        <EditText
+            android:id="@+id/passwordCheckEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="비밀번호확인"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:lines="11"
+            android:maxLines="1"
+            android:minLines="1"
+            android:maxLength="10"
+            android:singleLine ="true"
+            />
+
+        <Button
+            android:id="@+id/sent_Bnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2CB61"
+            android:text="회원가입"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "911705440842",
+    "project_id": "nftartist-cd9a6",
+    "storage_bucket": "nftartist-cd9a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911705440842:android:aca71b791ae7e8f0f4dcb3",
+        "android_client_info": {
+          "package_name": "com.example.nftartist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911705440842-3hpne3s5hibr1rbaqacf4t5cj1ej1slf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nftartist",
+            "certificate_hash": "20faecf9ee2418a66c1b6146009f61d250d690e1"
+          }
+        },
+        {
+          "client_id": "911705440842-9cbhi73b9lmn7j1ksl1v1rdmf30gitmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2-SqZITYDxGPcAiDwzj2a7RHlzOIaJzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911705440842-9cbhi73b9lmn7j1ksl1v1rdmf30gitmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

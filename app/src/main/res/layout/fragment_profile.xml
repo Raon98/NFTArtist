@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/file_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/artistnft"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_nicName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/border"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="닉네임"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/file_top"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/main_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center|left"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="#F2CB61"
+                app:cardCornerRadius="15dp">
+
+
+                <TextView
+                    android:id="@+id/info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="35dp"
+                    android:gravity="left"
+                    android:text="이름"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="left"
+                    android:hint="소개"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/browser_actions_title_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/Myinfoimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/profile_change"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/custom_button2"
+                android:gravity="center"
+                android:text="프로필변경"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_top"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="TextAppearanceExpanded" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="TextAppearanceCollapsed" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

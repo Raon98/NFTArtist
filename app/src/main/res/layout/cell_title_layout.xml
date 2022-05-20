@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgContent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/bgContent"
+    app:cardCornerRadius="15dp">
+
+    <!-- LEFT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/bgContent">
+
+        <ImageView
+            android:id="@+id/Main_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgContent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_image" />
+
+        <TextView
+
+            android:id="@+id/mainPageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@id/Main_image"
+            android:layout_alignBottom="@id/Main_image"
+            android:layout_alignParentBottom="false"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="@string/requests_count_badge"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+    <!-- RIGHT TITLE PART -->
+</androidx.cardview.widget.CardView>
